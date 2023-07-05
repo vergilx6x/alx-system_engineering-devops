@@ -1,2 +1,2 @@
-#!/bin/bash
-pwd=Print "/alx-system_engineering-devops/0x00-shell_basics"
+#!/bin/bash cwd=$(pwd)
+echo "Current working directory: $cwd"
