@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#Prints "Best School" 10 times, and "Hi" the 9th time.
+MESSAGE="Best School"
+
+COUNT=0
+echo $$
+while [ $COUNT -lt 10 ]; do
+   if [ $COUNT = 8 ]; then
+      echo "Hi"
+      ((COUNT++))
+   else
+      echo "$MESSAGE"
+      ((COUNT++))
+   fi
+done
