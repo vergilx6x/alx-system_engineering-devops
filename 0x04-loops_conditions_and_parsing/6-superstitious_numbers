@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+#Prints from 1 to 20,
+#"bad luck from China" on the 4th,
+#"bad luck from Japan" on the 9th,
+#"bad luck from Italy" on the 17th.
+
+COUNT=1
+
+while [ $COUNT -le 20 ]; do
+	
+   case $COUNT in
+      5)
+         echo "bad luck from China"
+         ;;
+   
+      9)
+         echo "bad luck from Japan"
+         ;;
+   
+      17)
+         echo "bad luck from Italy"
+         ;;
+   
+      *)
+         echo "$COUNT"
+         ;;
+   
+   esac
+   (( COUNT++ ))
+
+done
