@@ -15,13 +15,13 @@ while [ $COUNT -le 20 ]; do
          ;;
    
       9)
-         echo "bad luck from Japan"
          echo "$COUNT"
+         echo "bad luck from Japan"
          ;;
    
       17)
-         echo "bad luck from Italy"
          echo "$COUNT"
+         echo "bad luck from Italy"
          ;;
    
       *)
@@ -29,6 +29,6 @@ while [ $COUNT -le 20 ]; do
          ;;
    
    esac
-   (( COUNT++ ))
+   ((COUNT++))
 
 done
