@@ -5,7 +5,8 @@ MESSAGE="Best School"
 COUNT=0
 while [ $COUNT -lt 10 ]; do
    if [ $COUNT = 8 ]; then
-      echo "Hi"
+	   echo "$MESSAGE"
+	   echo "Hi"
       ((COUNT++))
    else
       echo "$MESSAGE"
