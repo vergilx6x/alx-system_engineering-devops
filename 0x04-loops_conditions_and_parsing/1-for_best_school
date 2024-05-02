@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+MESSAGE="Best School"
+
+COUNT=0
+
+while [ $COUNT -lt 10 ]; do
+   echo "$MESSAGE"
+   ((COUNT++))
+
+done
