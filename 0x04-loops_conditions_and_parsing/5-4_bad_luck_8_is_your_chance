@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#Print "Best School" 10 times, "bad luck" instead in the 4th time,
+#"good luck" the 8th time
+
+COUNT=1
+
+while [ $COUNT -le 10 ]; do
+	if [ $COUNT = 4 ]; then
+		echo "bad luck"
+		((COUNT++))
+	elif [ $COUNT = 8 ]; then
+		echo "good luck"
+		((COUNT++))
+	else
+		echo "Best School"
+		((COUNT++))
+	fi
+done
