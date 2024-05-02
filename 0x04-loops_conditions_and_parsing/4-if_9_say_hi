@@ -3,7 +3,6 @@
 MESSAGE="Best School"
 
 COUNT=0
-echo $$
 while [ $COUNT -lt 10 ]; do
    if [ $COUNT = 8 ]; then
       echo "Hi"
