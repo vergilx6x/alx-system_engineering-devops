@@ -1,1 +1,1 @@
-This project is about learning the basics of shell navigation and manipulating files.
+****** 0x08. Networking basics #1 ******
