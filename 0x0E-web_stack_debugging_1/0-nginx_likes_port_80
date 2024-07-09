@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Configures Nginx in Ubuntu
+apt-get update -y
+apt-get install -y nginx
