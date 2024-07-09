@@ -2,3 +2,5 @@
 # Configures Nginx in Ubuntu
 apt-get update -y
 apt-get install -y nginx
+/etc/init.d/nginx start
+/etc/init.d/nginx enable
