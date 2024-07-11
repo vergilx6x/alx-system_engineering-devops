@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# A cript that will display information about subdomains.
+
+if [ $# = 0 ]; then
+   echo "Exactly one argument provided."
+elif [ $# = 1 ]; then
+   ip=$(dig www.$1 | grep -A1 'ANSWER SECTION:' | awk '{print $5}' | tail -n 1)
+   echo "The subdomain www is a A record and points to $ip"
+   ip=$(dig lb-01.$1 | grep -A1 'ANSWER SECTION:' | awk '{print $5}' | tail -n 1)
+   echo "The subdomain lb-01 is a A record and points to $ip"
+   ip=$(dig web-01.$1 | grep -A1 'ANSWER SECTION:' | awk '{print $5}' | tail -n 1)
+   echo "The subdomain web-01 is a A record and points to $ip"
+   ip=$(dig web-02.$1 | grep -A1 'ANSWER SECTION:' | awk '{print $5}' | tail -n 1)
+   echo "The subdomain web-02 is a A record and points to $ip"
+elif [ $# = 2 ]; then
+   ip=$(dig $2.$1 | grep -A1 'ANSWER SECTION:' | awk '{print $5}' | tail -n 1)
+   echo "The subdomain $2 is a A record and points to $ip"
+fi
